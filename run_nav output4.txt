@@ -1,0 +1,944 @@
+indro@indro-commander:~/tuskegee_robot_ws_v6_final_jg$ ros2 launch vision-nav-manager run_navigation.launch.py
+[INFO] [launch]: All log files can be found below /home/indro/.ros/log/2025-07-21-16-00-41-512826-indro-commander-19473
+[INFO] [launch]: Default logging verbosity is set to INFO
+################ Debug: xarm_setup.launch.py
+################ Debug: lite6_planner_realmove.launch.py
+################ Debug: xarm_setup.launch.py
+################ Debug: lite6_planner_realmove.launch.py
+################ Debug: lite6_planner_realmove.launch.py
+################ Debug: _robot_moveit_realmove.launch.py
+################ Debug: _robot_planner.launch.py
+################ Debug: _robot_planner.launch.py
+[INFO] [hunter_base_node-1]: process started with pid [19474]
+[INFO] [realsense2_camera_node-4]: process started with pid [19480]
+[hunter_base_node-1] Loading parameters: 
+[hunter_base_node-1] - port name: can0
+[hunter_base_node-1] - odom frame name: odom
+[hunter_base_node-1] - base frame name: base_link
+[hunter_base_node-1] - odom topic name: odom
+[hunter_base_node-1] - simulated robot: false
+[hunter_base_node-1] - sim control rate: 50
+[hunter_base_node-1] ----------------------------
+[hunter_base_node-1] Robot base: Hunter
+[hunter_base_node-1] Start listening to port: can0
+[hunter_base_node-1] Detected protocol: AGX_V2
+[hunter_base_node-1] Robot initialized, start running ...
+[hunter_base_node-1] Start listening to port: can0
+[hunter_base_node-1] Using CAN bus to talk with the robot
+[INFO] [usb_cam_node_exe-2]: process started with pid [19476]
+[INFO] [usb_cam_node_exe-3]: process started with pid [19478]
+[INFO] [keypoint_inference.py-5]: process started with pid [19482]
+[INFO] [reference_path_publisher.py-6]: process started with pid [19484]
+[INFO] [mpc_ackermann.py-7]: process started with pid [19486]
+[INFO] [state_machine.py-8]: process started with pid [19492]
+[INFO] [robot_state_publisher-9]: process started with pid [19503]
+[INFO] [static_transform_publisher-10]: process started with pid [19505]
+[INFO] [move_group-11]: process started with pid [19516]
+[INFO] [xarm_planner_node-12]: process started with pid [19519]
+[INFO] [joint_state_publisher-13]: process started with pid [19529]
+[INFO] [ros2_control_node-14]: process started with pid [19541]
+[INFO] [spawner-15]: process started with pid [19552]
+[INFO] [xarm_planner_node-16]: process started with pid [19561]
+[INFO] [xarm_moveit-17]: process started with pid [19587]
+[INFO] [image_saver_node-18]: process started with pid [19599]
+[INFO] [pan_tilt_pub-19]: process started with pid [19601]
+[INFO] [realsense_image_saver_node-20]: process started with pid [19611]
+[robot_state_publisher-9] [INFO] [1753131643.766011809] [robot_state_publisher]: got segment link1
+[robot_state_publisher-9] [INFO] [1753131643.766240513] [robot_state_publisher]: got segment link2
+[robot_state_publisher-9] [INFO] [1753131643.766266145] [robot_state_publisher]: got segment link3
+[robot_state_publisher-9] [INFO] [1753131643.766279777] [robot_state_publisher]: got segment link4
+[robot_state_publisher-9] [INFO] [1753131643.766290817] [robot_state_publisher]: got segment link5
+[robot_state_publisher-9] [INFO] [1753131643.766301153] [robot_state_publisher]: got segment link6
+[robot_state_publisher-9] [INFO] [1753131643.766311521] [robot_state_publisher]: got segment link_base
+[robot_state_publisher-9] [INFO] [1753131643.766322977] [robot_state_publisher]: got segment link_eef
+[robot_state_publisher-9] [INFO] [1753131643.766334017] [robot_state_publisher]: got segment world
+[static_transform_publisher-10] [WARN] [1753131643.710000193] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-10] [INFO] [1753131643.753396833] [static_transform_publisher]: Spinning until stopped - publishing transform
+[static_transform_publisher-10] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-10] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-10] from 'world' to 'link_base'
+[xarm_planner_node-12] [INFO] [1753131643.895344545] [xarm_planner_node]: xarm_planner_node start
+[xarm_planner_node-12] [INFO] [1753131643.895569089] [xarm_planner_node]: namespace: /, group_name: lite6
+[xarm_planner_node-12] [WARN] [1753131643.896490977] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[realsense2_camera_node-4] [INFO] [1753131644.008232225] [camera.camera]: RealSense ROS v4.55.1
+[realsense2_camera_node-4] [INFO] [1753131644.008489089] [camera.camera]: Built with LibRealSense v2.55.1
+[realsense2_camera_node-4] [INFO] [1753131644.008533249] [camera.camera]: Running with LibRealSense v2.55.1
+[ros2_control_node-14] [WARN] [1753131644.006329569] [controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ros2_control_node-14] [INFO] [1753131644.006911681] [resource_manager]: Loading hardware 'uf_robot_hardware/UFRobotSystemHardware' 
+[xarm_planner_node-12] [INFO] [1753131644.028425473] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.114761 seconds
+[xarm_planner_node-12] [INFO] [1753131644.028527905] [moveit_robot_model.robot_model]: Loading robot model 'UF_ROBOT'...
+[xarm_planner_node-12] [INFO] [1753131644.028546721] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[ros2_control_node-14] [INFO] [1753131644.110308897] [resource_manager]: Initialize hardware 'uf_robot_hardware/UFRobotSystemHardware' 
+[usb_cam_node_exe-2] [INFO] [1753131644.148100353] [front_cam_node]: camera_name value: front_cam
+[usb_cam_node_exe-2] [WARN] [1753131644.148619969] [front_cam_node]: framerate: 30.000000
+[usb_cam_node_exe-2] [INFO] [1753131644.161198273] [front_cam_node]: camera calibration URL: package://usb_cam/config/camera_info_front.yaml
+[xarm_planner_node-16] [INFO] [1753131644.176266785] [xarm_planner_node]: xarm_planner_node start
+[xarm_planner_node-16] [INFO] [1753131644.176605921] [xarm_planner_node]: namespace: /, group_name: lite6
+[xarm_planner_node-16] [WARN] [1753131644.181316737] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[move_group-11] [INFO] [1753131644.195387041] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.19893 seconds
+[move_group-11] [INFO] [1753131644.195614465] [moveit_robot_model.robot_model]: Loading robot model 'UF_ROBOT'...
+[move_group-11] [INFO] [1753131644.195640769] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[ros2_control_node-14] [INFO] [1753131644.230522913] [UFACTORY.RobotHW]: [192.168.42.150] namespace: /
+[ros2_control_node-14] [INFO] [1753131644.230588545] [UFACTORY.RobotHW]: [192.168.42.150] robot_type: lite, hw_ns: ufactory, prefix: , report_type: normal
+[ros2_control_node-14] [INFO] [1753131644.233276417] [UFACTORY.RobotHW]: [192.168.42.150] dof: 6, velocity_control: 0, add_gripper: 0, add_bio_gripper: 0, baud_checkset: 1, default_gripper_baud: 2000000
+[ros2_control_node-14] [INFO] [1753131644.233928577] [ufactory_driver]: robot_ip=192.168.42.150, report_type=normal, dof=6
+[ros2_control_node-14] [INFO] [1753131644.234065857] [ufactory_driver]: baud_checkset: 1, default_gripper_baud: 2000000
+[ros2_control_node-14] SDK_VERSION: 1.14.2
+[ros2_control_node-14] Tcp control connection successful
+[usb_cam_node_exe-2] Cannot open device: ``, double-check read / write permissions for device
+[usb_cam_node_exe-3] [INFO] [1753131644.379685281] [kiyo_cam_node]: camera_name value: kiyo_pro
+[usb_cam_node_exe-3] [WARN] [1753131644.379893697] [kiyo_cam_node]: framerate: 15.000000
+[xarm_planner_node-16] [INFO] [1753131644.390643489] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.182268 seconds
+[xarm_planner_node-16] [INFO] [1753131644.390885217] [moveit_robot_model.robot_model]: Loading robot model 'UF_ROBOT'...
+[xarm_planner_node-16] [INFO] [1753131644.390919137] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[usb_cam_node_exe-3] [INFO] [1753131644.400562657] [kiyo_cam_node]: camera calibration URL: package://usb_cam/config/camera_info_kiyo.yaml
+[usb_cam_node_exe-3] [INFO] [1753131644.590903393] [kiyo_cam_node]: Starting 'kiyo_pro' (/dev/video0) at 1280x720 via mmap (yuyv) at 15 FPS
+[usb_cam_node_exe-2] [INFO] [1753131644.590929697] [front_cam_node]: Starting 'front_cam' (/dev/video2) at 320x240 via mmap (mjpeg2rgb) at 30 FPS
+[usb_cam_node_exe-2] [swscaler @ 0xaaaaed426010] No accelerated colorspace conversion found from yuv422p to rgb24.
+[usb_cam_node_exe-3] [swscaler @ 0xaaaafa678910] No accelerated colorspace conversion found from yuv422p to rgb24.
+[ros2_control_node-14] ROBOT_IP: 192.168.42.150, VERSION: v2.6.0, PROTOCOL: V1, DETAIL: 6,9,LI1006,DL1000,v2.6.0, TYPE1300: [0, 0]
+[ros2_control_node-14] Tcp Report Rich connection successful
+[ros2_control_node-14] Tcp Report Norm connection successful
+[ros2_control_node-14] [INFO] [1753131644.618399841] [ufactory_driver]: [TCP STATUS] CONTROL: 1, REPORT: 1
+[ros2_control_node-14] report_data_size: 145, size_is_not_confirm: 0
+[ros2_control_node-14] change protocol identifier to 3
+[ros2_control_node-14] report_data_size: 574, size_is_not_confirm: 0
+[usb_cam_node_exe-3] [INFO] [1753131644.653156129] [kiyo_cam_node]: Setting 'white_balance_temperature_auto' to 1
+[usb_cam_node_exe-3] [INFO] [1753131644.653262625] [kiyo_cam_node]: Setting 'exposure_auto' to 3
+[ros2_control_node-14] [INFO] [1753131644.700704673] [ufactory_driver]: gripper_speed: 2000, gripper_max_pos: 850, gripper_frequency : 10, gripper_threshold: 3, gripper_threshold_times: 10
+[move_group-11] [INFO] [1753131644.734819649] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-11] [INFO] [1753131644.735259329] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-11] [INFO] [1753131644.736259873] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-11] [INFO] [1753131644.737124641] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-11] [INFO] [1753131644.737164161] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-11] [INFO] [1753131644.738475361] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-11] [INFO] [1753131644.738516609] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-11] [INFO] [1753131644.739355169] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-11] [INFO] [1753131644.740351521] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-11] [WARN] [1753131644.742198305] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-11] [ERROR] [1753131644.742250977] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[ros2_control_node-14] [INFO] [1753131644.742963137] [ufactory_driver]: bio_gripper_speed: 2000, bio_gripper_max_pos: 130, bio_gripper_min_pos: 50, bio_gripper_frequency : 10, bio_gripper_threshold: 3, bio_gripper_threshold_times: 10
+[move_group-11] [INFO] [1753131644.763019393] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[usb_cam_node_exe-3] [INFO] [1753131644.771328673] [kiyo_cam_node]: Setting 'focus_auto' to 0
+[ros2_control_node-14] [INFO] [1753131644.790200161] [UFACTORY.RobotHW]: [192.168.42.150] System Sucessfully configured!
+[ros2_control_node-14] [INFO] [1753131644.790291681] [resource_manager]: Successful initialization of hardware 'uf_robot_hardware/UFRobotSystemHardware'
+[ros2_control_node-14] [INFO] [1753131644.794958081] [resource_manager]: 'configure' hardware 'uf_robot_hardware/UFRobotSystemHardware' 
+[ros2_control_node-14] [INFO] [1753131644.795040609] [resource_manager]: Successful 'configure' of hardware 'uf_robot_hardware/UFRobotSystemHardware'
+[ros2_control_node-14] [INFO] [1753131644.795057345] [resource_manager]: 'activate' hardware 'uf_robot_hardware/UFRobotSystemHardware' 
+[move_group-11] [INFO] [1753131644.814902305] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[ros2_control_node-14] [set_state], xArm is ready to move
+[ros2_control_node-14] [INFO] [1753131644.820497953] [UFACTORY.RobotHW]: [192.168.42.150] System Sucessfully started!
+[ros2_control_node-14] [INFO] [1753131644.820578753] [resource_manager]: Successful 'activate' of hardware 'uf_robot_hardware/UFRobotSystemHardware'
+[move_group-11] [INFO] [1753131644.822833729] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-11] [INFO] [1753131644.822906561] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-11] [INFO] [1753131644.822918113] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-11] [INFO] [1753131644.822960865] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-11] [INFO] [1753131644.822993665] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-11] [INFO] [1753131644.823006401] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-11] [INFO] [1753131644.823027297] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-11] [INFO] [1753131644.823036289] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was set to 0.050000
+[move_group-11] [INFO] [1753131644.823046785] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-11] [INFO] [1753131644.823066785] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-11] [INFO] [1753131644.823074177] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-11] [INFO] [1753131644.823079745] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-11] [INFO] [1753131644.823085281] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-11] [INFO] [1753131644.823090273] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-11] [INFO] [1753131644.823095809] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[ros2_control_node-14] [INFO] [1753131644.830018753] [controller_manager]: update rate is 150 Hz
+[ros2_control_node-14] [WARN] [1753131644.842361601] [controller_manager]: No real-time kernel detected on this system. See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[move_group-11] [INFO] [1753131645.035065313] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for lite6_traj_controller
+[move_group-11] [INFO] [1753131645.035433633] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131645.035489281] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131645.037981729] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
+[move_group-11] [INFO] [1753131645.038044193] [move_group.move_group]: MoveGroup debug mode is ON
+[usb_cam_node_exe-3] [INFO] [1753131645.057442433] [kiyo_cam_node]: Timer triggering every 66 ms
+[xarm_planner_node-16] [INFO] [1753131645.099982977] [move_group_interface]: Ready to take commands for planning group lite6.
+[xarm_planner_node-16] [INFO] [1753131645.100132801] [xarm_planner_node]: Planning frame: world
+[xarm_planner_node-16] [INFO] [1753131645.100185505] [xarm_planner_node]: End effector link: link_eef
+[xarm_planner_node-16] [INFO] [1753131645.100205153] [xarm_planner_node]: Available Planning Groups:
+[xarm_planner_node-12] [INFO] [1753131645.101475873] [move_group_interface]: Ready to take commands for planning group lite6.
+[xarm_planner_node-12] [INFO] [1753131645.101589057] [xarm_planner_node]: Planning frame: world
+[xarm_planner_node-12] [INFO] [1753131645.101637537] [xarm_planner_node]: End effector link: link_eef
+[xarm_planner_node-12] [INFO] [1753131645.101655265] [xarm_planner_node]: Available Planning Groups:
+[move_group-11] [INFO] [1753131645.128513409] [move_group.move_group]: 
+[move_group-11] 
+[move_group-11] ********************************************************
+[move_group-11] * MoveGroup using: 
+[move_group-11] *     - ApplyPlanningSceneService
+[move_group-11] *     - ClearOctomapService
+[move_group-11] *     - CartesianPathService
+[move_group-11] *     - ExecuteTrajectoryAction
+[move_group-11] *     - GetPlanningSceneService
+[move_group-11] *     - KinematicsService
+[move_group-11] *     - MoveAction
+[move_group-11] *     - MotionPlanService
+[move_group-11] *     - QueryPlannersService
+[move_group-11] *     - StateValidationService
+[move_group-11] ********************************************************
+[move_group-11] 
+[move_group-11] [INFO] [1753131645.133201825] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-11] [INFO] [1753131645.134429953] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-11] Loading 'move_group/ApplyPlanningSceneService'...
+[move_group-11] Loading 'move_group/ClearOctomapService'...
+[move_group-11] Loading 'move_group/MoveGroupCartesianPathService'...
+[move_group-11] Loading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-11] Loading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-11] Loading 'move_group/MoveGroupKinematicsService'...
+[move_group-11] Loading 'move_group/MoveGroupMoveAction'...
+[move_group-11] Loading 'move_group/MoveGroupPlanService'...
+[move_group-11] Loading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-11] Loading 'move_group/MoveGroupStateValidationService'...
+[move_group-11] 
+[move_group-11] You can start planning now!
+[move_group-11] 
+[realsense2_camera_node-4] [INFO] [1753131645.243994433] [camera.camera]: Device with serial number 042222071773 was found.
+[realsense2_camera_node-4] 
+[realsense2_camera_node-4] [INFO] [1753131645.244875937] [camera.camera]: Device with physical ID 2-3.3-4 was found.
+[realsense2_camera_node-4] [INFO] [1753131645.244972833] [camera.camera]: Device with name Intel RealSense D435I was found.
+[realsense2_camera_node-4] [INFO] [1753131645.246703041] [camera.camera]: Device with port number 2-3.3 was found.
+[realsense2_camera_node-4] [INFO] [1753131645.246866625] [camera.camera]: Device USB type: 3.2
+[realsense2_camera_node-4] [INFO] [1753131645.247145185] [camera.camera]: getParameters...
+[realsense2_camera_node-4] [INFO] [1753131645.248905057] [camera.camera]: JSON file is not provided
+[realsense2_camera_node-4] [INFO] [1753131645.252245441] [camera.camera]: Device Name: Intel RealSense D435I
+[realsense2_camera_node-4] [INFO] [1753131645.252442561] [camera.camera]: Device Serial No: 042222071773
+[realsense2_camera_node-4] [INFO] [1753131645.252496673] [camera.camera]: Device physical port: 2-3.3-4
+[realsense2_camera_node-4] [INFO] [1753131645.252534145] [camera.camera]: Device FW version: 5.16.0.1
+[realsense2_camera_node-4] [INFO] [1753131645.252603489] [camera.camera]: Device Product ID: 0x0B3A
+[realsense2_camera_node-4] [INFO] [1753131645.252689697] [camera.camera]: Sync Mode: Off
+[joint_state_publisher-13] [INFO] [1753131645.255928961] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+[usb_cam_node_exe-2] [INFO] [1753131645.410119905] [front_cam_node]: Setting 'white_balance_temperature_auto' to 1
+[usb_cam_node_exe-2] [INFO] [1753131645.410273793] [front_cam_node]: Setting 'exposure_auto' to 3
+[usb_cam_node_exe-2] [INFO] [1753131645.430708545] [front_cam_node]: Setting 'focus_auto' to 0
+[usb_cam_node_exe-2] [INFO] [1753131645.574298881] [front_cam_node]: Timer triggering every 33 ms
+[ros2_control_node-14] [INFO] [1753131645.679085697] [controller_manager]: Loading controller 'lite6_traj_controller'
+[ros2_control_node-14] [WARN] [1753131645.745235585] [lite6_traj_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-15] [INFO] [1753131645.817593505] [spawner_lite6_traj_controller]: Loaded lite6_traj_controller
+[ros2_control_node-14] [INFO] [1753131645.835162145] [controller_manager]: Configuring controller 'lite6_traj_controller'
+[ros2_control_node-14] [INFO] [1753131645.835708033] [lite6_traj_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-14] [INFO] [1753131645.835792289] [lite6_traj_controller]: Command interfaces are [position velocity] and state interfaces are [position velocity].
+[ros2_control_node-14] [INFO] [1753131645.835870049] [lite6_traj_controller]: Using 'splines' interpolation method.
+[ros2_control_node-14] [INFO] [1753131645.837012865] [lite6_traj_controller]: Controller state will be published at 25.00 Hz.
+[ros2_control_node-14] [INFO] [1753131645.852696577] [lite6_traj_controller]: Action status changes will be monitored at 10.00 Hz.
+[spawner-15] [INFO] [1753131645.920464257] [spawner_lite6_traj_controller]: Configured and activated lite6_traj_controller
+[xarm_moveit-17] [INFO] [1753131646.160689153] [xarm_moveit]: finished instantiation of XarmMoveit
+[INFO] [spawner-15]: process has finished cleanly [pid 19552]
+[pan_tilt_pub-19] [INFO] [1753131646.384045313] [pan_tilt_pub_node]: pan tilt pub 1
+[keypoint_inference.py-5] [ERROR] [1753131647.370441601] [hunter.vision_perception]: [vision_perception] calibration not available... skipping inference...
+[keypoint_inference.py-5] [ERROR] [1753131647.374104673] [hunter.vision_perception]: [vision_perception] calibration not available... skipping inference...
+[realsense2_camera_node-4] [INFO] [1753131650.409195553] [camera.camera]: Set ROS param depth_module.depth_profile to default: 848x480x30
+[realsense2_camera_node-4] [INFO] [1753131650.411448769] [camera.camera]: Set ROS param depth_module.infra_profile to default: 848x480x30
+[realsense2_camera_node-4] [INFO] [1753131651.508776993] [camera.camera]: Set ROS param rgb_camera.color_profile to default: 1280x720x30
+[realsense2_camera_node-4] [INFO] [1753131651.513801185] [camera.camera]: Set ROS param gyro_fps to default: 200
+[realsense2_camera_node-4] [INFO] [1753131651.514330401] [camera.camera]: Set ROS param accel_fps to default: 63
+[realsense2_camera_node-4] [INFO] [1753131651.564514625] [camera.camera]: Stopping Sensor: Depth Module
+[realsense2_camera_node-4] [INFO] [1753131651.564774433] [camera.camera]: Stopping Sensor: RGB Camera
+[realsense2_camera_node-4] [INFO] [1753131651.809433409] [camera.camera]: Starting Sensor: Depth Module
+[realsense2_camera_node-4] [INFO] [1753131651.939172225] [camera.camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 848, Height: 480, FPS: 30
+[realsense2_camera_node-4]  21/07 16:00:51,942 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4] [INFO] [1753131651.964192225] [camera.camera]: Starting Sensor: RGB Camera
+[realsense2_camera_node-4] [INFO] [1753131652.038689761] [camera.camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 30
+[realsense2_camera_node-4] [INFO] [1753131652.053816289] [camera.camera]: RealSense Node Is Up!
+[realsense2_camera_node-4]  21/07 16:00:52,366 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,378 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,390 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,401 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,413 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,631 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,645 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[realsense2_camera_node-4]  21/07 16:00:52,655 WARNING [281473013639392] (messenger-libusb.cpp:42) control_transfer returned error, index: 768, error: Resource temporarily unavailable, number: 11
+[state_machine.py-8] [INFO] [1753131659.741129281] [state_Machine_node]: Entered data collection state................
+[pan_tilt_pub-19] [INFO] [1753131660.745615201] [pan_tilt_pub_node]: Received pi state request: True
+[xarm_moveit-17] [INFO] [1753131660.745667041] [xarm_moveit]: Received robot state request: True
+[realsense_image_saver_node-20] [INFO] [1753131660.840272897] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131660.841129857] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131660.855305921] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131660.867543617] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_1.jpg
+[xarm_planner_node-16] [INFO] [1753131661.250656417] [move_group_interface]: MoveGroup action client/server ready
+[xarm_moveit-17] [INFO] [1753131661.250992097] [xarm_moveit]: finished future.done while loop
+[xarm_moveit-17] [INFO] [1753131661.251826913] [xarm_moveit]: finished creating pose plan with result None
+[move_group-11] [INFO] [1753131661.251836289] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131661.252313281] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_moveit-17] [INFO] [1753131661.252810049] [xarm_moveit]: Move plan executed..
+[xarm_moveit-17] [INFO] [1753131661.253477729] [xarm_moveit]: Waiting for 5 seconds to capture image...
+[xarm_planner_node-16] [INFO] [1753131661.255994209] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131661.343021377] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.343163873] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.343196577] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.343215713] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.343234497] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.343251105] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.343267393] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131661.343364129] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131661.345309281] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131661.487395265] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131661.490065665] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131661.490503553] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131661.490682817] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-12] [INFO] [1753131661.490884257] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131661.551757185] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-11] [INFO] [1753131661.551903553] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131661.551971873] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131661.845860065] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-11] [INFO] [1753131661.846095041] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[xarm_planner_node-12] [INFO] [1753131661.847193249] [move_group_interface]: Execute request success!
+[xarm_planner_node-16] [INFO] [1753131661.847953377] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131661.848125249] [move_group_interface]: time taken to generate plan: 0.021867 seconds
+[xarm_planner_node-12] [INFO] [1753131661.848410785] [move_group_interface]: MoveGroup action client/server ready
+[move_group-11] [INFO] [1753131661.849140993] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131661.849439873] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_planner_node-12] [INFO] [1753131661.849785505] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131661.943047201] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.943170113] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.943197857] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.943216577] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.943233953] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.943250273] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131661.943269665] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131661.943330369] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131661.944371105] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131662.154900897] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131662.155960257] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131662.156337793] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131662.156397985] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131662.156437985] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[xarm_planner_node-16] [INFO] [1753131662.156593313] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131662.156660897] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-11] [INFO] [1753131662.243799585] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-11] [INFO] [1753131662.243908001] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131662.243940865] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131662.244426337] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to lite6_traj_controller
+[move_group-11] [INFO] [1753131662.245988129] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: lite6_traj_controller started execution
+[move_group-11] [INFO] [1753131662.246027809] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-14] [INFO] [1753131662.245505217] [lite6_traj_controller]: Received new action goal
+[ros2_control_node-14] [INFO] [1753131662.245649857] [lite6_traj_controller]: Accepted new action goal
+[realsense_image_saver_node-20] [INFO] [1753131662.753874177] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131662.754634465] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131662.789619585] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131662.792850401] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_2.jpg
+[realsense_image_saver_node-20] [INFO] [1753131664.760347521] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131664.763071233] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131664.790642433] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131664.795039777] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_3.jpg
+[xarm_moveit-17] [INFO] [1753131666.256902433] [xarm_moveit]: Started looping poses for data collection.....
+[xarm_moveit-17] [INFO] [1753131666.759527009] [xarm_moveit]: finished future.done while loop
+[xarm_moveit-17] [INFO] [1753131666.760365793] [xarm_moveit]: finished creating pose plan with result None
+[xarm_moveit-17] [INFO] [1753131666.761304353] [xarm_moveit]: Finished pose.....
+[xarm_moveit-17] [INFO] [1753131666.762000321] [xarm_moveit]: Waiting for 9 seconds to capture image...
+[realsense_image_saver_node-20] [INFO] [1753131666.768627361] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131666.769458785] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131666.807479137] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131666.810767617] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_4.jpg
+[ros2_control_node-14] [INFO] [1753131667.297675553] [lite6_traj_controller]: Goal reached, success!
+[move_group-11] [INFO] [1753131667.346989313] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'lite6_traj_controller' successfully finished
+[move_group-11] [INFO] [1753131667.643934721] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-11] [INFO] [1753131667.644263553] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[xarm_planner_node-12] [INFO] [1753131667.646276225] [move_group_interface]: Planning request complete!
+[xarm_planner_node-12] [INFO] [1753131667.647276001] [move_group_interface]: time taken to generate plan: 0.0581474 seconds
+[xarm_planner_node-16] [INFO] [1753131667.648274177] [move_group_interface]: Execute request success!
+[move_group-11] [INFO] [1753131667.648720097] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131667.649043041] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131667.649100769] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131667.649142049] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131667.649309441] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-12] [INFO] [1753131667.649569057] [move_group_interface]: Execute request accepted
+[move_group-11] [ERROR] [1753131667.743851841] [moveit_ros.trajectory_execution_manager]: 
+[move_group-11] Invalid Trajectory: start point deviates from current robot state more than 0.01
+[move_group-11] joint 'joint1': expected: -0.84647, current: 0.00350981
+[move_group-11] [INFO] [1753131667.743982433] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[move_group-11] [INFO] [1753131667.744683393] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131667.745045409] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131667.745106049] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131667.745140545] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131667.745337793] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-16] [INFO] [1753131667.745090113] [move_group_interface]: Execute request accepted
+[move_group-11] [ERROR] [1753131667.844125665] [moveit_ros.trajectory_execution_manager]: 
+[move_group-11] Invalid Trajectory: start point deviates from current robot state more than 0.01
+[move_group-11] joint 'joint1': expected: -0.84647, current: 0.00350981
+[move_group-11] [INFO] [1753131667.844264801] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[xarm_planner_node-16] [INFO] [1753131667.845737377] [move_group_interface]: Execute request aborted
+[xarm_planner_node-12] [INFO] [1753131667.846091201] [move_group_interface]: Execute request aborted
+[xarm_planner_node-12] [ERROR] [1753131667.851758369] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[xarm_planner_node-12] [ERROR] [1753131667.851883553] [xarm_planner_node]: executePath: execute failed, wait=1, MoveItErrorCode=-4
+[xarm_planner_node-12] [INFO] [1753131667.852504353] [move_group_interface]: MoveGroup action client/server ready
+[xarm_planner_node-16] [ERROR] [1753131667.852963137] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[xarm_planner_node-16] [ERROR] [1753131667.853063425] [xarm_planner_node]: executePath: execute failed, wait=1, MoveItErrorCode=-4
+[move_group-11] [INFO] [1753131667.853696737] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[xarm_planner_node-16] [INFO] [1753131667.854043265] [move_group_interface]: MoveGroup action client/server ready
+[xarm_planner_node-12] [INFO] [1753131667.854124545] [move_group_interface]: Planning request accepted
+[move_group-11] [INFO] [1753131667.854178305] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-11] [WARN] [1753131667.943272385] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131667.943370337] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131667.943396897] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131667.943416321] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131667.943434849] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131667.943451361] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131667.943467041] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131667.943524897] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131667.944564449] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[hunter_base_node-1] set steering angle: 0
+[move_group-11] [INFO] [1753131668.148649313] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131668.150879137] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131668.151219361] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_planner_node-16] [INFO] [1753131668.151759969] [move_group_interface]: Planning request accepted
+[hunter_base_node-1] set steering angle: 0
+[move_group-11] [WARN] [1753131668.247411393] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131668.247548033] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131668.247575809] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131668.247593793] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131668.247748353] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131668.247777953] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131668.247795841] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131668.247872545] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131668.248886689] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131668.402140865] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[xarm_planner_node-12] [INFO] [1753131668.404599073] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131668.404601761] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131668.405459361] [move_group_interface]: time taken to generate plan: 0.0126845 seconds
+[xarm_planner_node-12] [INFO] [1753131668.405869185] [move_group_interface]: time taken to generate plan: 0.13138 seconds
+[hunter_base_node-1] set steering angle: 0
+[realsense_image_saver_node-20] [INFO] [1753131668.784147201] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131668.786645825] [realsense_image_saver_node]: Flag received: Capturing image now.
+[hunter_base_node-1] set steering angle: 0
+[realsense_image_saver_node-20] [INFO] [1753131668.817516705] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131668.822341121] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_5.jpg
+[realsense_image_saver_node-20] [INFO] [1753131670.770372033] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131670.771187201] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131670.801680321] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131670.804444417] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_6.jpg
+[hunter_base_node-1] set steering angle: 0
+[realsense_image_saver_node-20] [INFO] [1753131672.771433217] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131672.774127073] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131672.800642369] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131672.807731681] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_7.jpg
+[realsense_image_saver_node-20] [INFO] [1753131674.768237729] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131674.769216161] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131674.806342305] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131674.812085089] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_8.jpg
+[xarm_moveit-17] [INFO] [1753131675.769324737] [xarm_moveit]: Waiting for 3 seconds to capture image...
+[image_saver_node-18] [INFO] [1753131675.842242977] [image_saver_node]: Flag received: Capturing image now.
+[image_saver_node-18] [INFO] [1753131675.856598145] [image_saver_node]: Processing image...
+[image_saver_node-18] [INFO] [1753131675.883346977] [image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/data_collection_images/data_collection_47/img_1.jpg
+[realsense_image_saver_node-20] [INFO] [1753131676.773392705] [realsense_image_saver_node]: Flag received:
+[realsense_image_saver_node-20] [INFO] [1753131676.774279041] [realsense_image_saver_node]: Flag received: Capturing image now.
+[realsense_image_saver_node-20] [INFO] [1753131676.793683297] [realsense_image_saver_node]: Processing image...
+[realsense_image_saver_node-20] [INFO] [1753131676.800658145] [realsense_image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images/data_collection_58/img_9.jpg
+[xarm_moveit-17] [INFO] [1753131678.772912289] [xarm_moveit]: Moving to next pose.....
+[xarm_planner_node-16] [INFO] [1753131679.275946209] [move_group_interface]: MoveGroup action client/server ready
+[xarm_planner_node-12] [INFO] [1753131679.276057089] [move_group_interface]: MoveGroup action client/server ready
+[xarm_moveit-17] [INFO] [1753131679.276718625] [xarm_moveit]: finished future.done while loop
+[xarm_moveit-17] [INFO] [1753131679.277534433] [xarm_moveit]: finished creating pose plan with result None
+[xarm_moveit-17] [INFO] [1753131679.278506721] [xarm_moveit]: Finished pose.....
+[xarm_moveit-17] [INFO] [1753131679.279168641] [xarm_moveit]: Waiting for 9 seconds to capture image...
+[move_group-11] [INFO] [1753131679.278800769] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131679.279366433] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_planner_node-16] [INFO] [1753131679.279309569] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131679.343171969] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.343272865] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.343300705] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.343319265] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.343337313] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.343354081] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.343370369] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131679.343538465] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131679.344583969] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131679.487746177] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131679.492027393] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[xarm_planner_node-12] [INFO] [1753131679.492407105] [move_group_interface]: Planning request accepted
+[move_group-11] [INFO] [1753131679.492462241] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-11] [WARN] [1753131679.543172385] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.543267937] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.543295745] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.543314913] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.543333025] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.543349153] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131679.543365089] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131679.543446625] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131679.544462209] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131679.731073633] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[xarm_planner_node-16] [INFO] [1753131679.733168033] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131679.733335329] [move_group_interface]: time taken to generate plan: 0.0470848 seconds
+[xarm_planner_node-12] [INFO] [1753131679.733555745] [move_group_interface]: Planning request complete!
+[xarm_planner_node-12] [INFO] [1753131679.734296641] [move_group_interface]: time taken to generate plan: 0.0717737 seconds
+[move_group-11] [INFO] [1753131679.734470017] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131679.734838433] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131679.734903393] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131679.735035009] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[xarm_planner_node-16] [INFO] [1753131679.734908353] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131679.735209185] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-11] [INFO] [1753131679.747347041] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-11] [INFO] [1753131679.747465665] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131679.747498465] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131679.747859553] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to lite6_traj_controller
+[ros2_control_node-14] [INFO] [1753131679.750721985] [lite6_traj_controller]: Received new action goal
+[ros2_control_node-14] [INFO] [1753131679.751093569] [lite6_traj_controller]: Accepted new action goal
+[move_group-11] [INFO] [1753131679.752543009] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: lite6_traj_controller started execution
+[move_group-11] [INFO] [1753131679.752604705] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-14] [INFO] [1753131683.497668161] [lite6_traj_controller]: Goal reached, success!
+[move_group-11] [INFO] [1753131683.552515457] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'lite6_traj_controller' successfully finished
+[move_group-11] [INFO] [1753131683.842888161] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-11] [INFO] [1753131683.843086817] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[move_group-11] [INFO] [1753131683.843789441] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131683.844055201] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131683.844103841] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131683.844135617] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[xarm_planner_node-12] [INFO] [1753131683.844081473] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131683.844270369] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-11] [ERROR] [1753131683.943734433] [moveit_ros.trajectory_execution_manager]: 
+[move_group-11] Invalid Trajectory: start point deviates from current robot state more than 0.01
+[move_group-11] joint 'joint1': expected: 0.00350981, current: -0.85452
+[move_group-11] [INFO] [1753131683.943856129] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[xarm_planner_node-16] [INFO] [1753131683.945356673] [move_group_interface]: Execute request success!
+[xarm_planner_node-12] [INFO] [1753131683.945794113] [move_group_interface]: Execute request aborted
+[xarm_planner_node-12] [ERROR] [1753131683.946794945] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[xarm_planner_node-12] [ERROR] [1753131683.946873057] [xarm_planner_node]: executePath: execute failed, wait=1, MoveItErrorCode=-4
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[image_saver_node-18] [INFO] [1753131688.290137057] [image_saver_node]: Flag received: Capturing image now.
+[xarm_moveit-17] [INFO] [1753131688.296744961] [xarm_moveit]: Waiting for 3 seconds to capture image...
+[image_saver_node-18] [INFO] [1753131688.311909569] [image_saver_node]: Processing image...
+[image_saver_node-18] [INFO] [1753131688.318659265] [image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/data_collection_images/data_collection_47/img_2.jpg
+[hunter_base_node-1] set steering angle: 0
+[xarm_moveit-17] [INFO] [1753131691.301006401] [xarm_moveit]: Moving to next pose.....
+[xarm_planner_node-16] [INFO] [1753131691.803393089] [move_group_interface]: MoveGroup action client/server ready
+[xarm_planner_node-12] [INFO] [1753131691.803400961] [move_group_interface]: MoveGroup action client/server ready
+[move_group-11] [INFO] [1753131691.804052577] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131691.804464225] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_moveit-17] [INFO] [1753131691.804113953] [xarm_moveit]: finished future.done while loop
+[xarm_planner_node-16] [INFO] [1753131691.804402273] [move_group_interface]: Planning request accepted
+[xarm_moveit-17] [INFO] [1753131691.804928609] [xarm_moveit]: finished creating pose plan with result None
+[xarm_moveit-17] [INFO] [1753131691.805982497] [xarm_moveit]: Finished pose.....
+[xarm_moveit-17] [INFO] [1753131691.806727457] [xarm_moveit]: Waiting for 9 seconds to capture image...
+[move_group-11] [WARN] [1753131691.847724609] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131691.847815361] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131691.847842881] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131691.847862657] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131691.847881377] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131691.848006913] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131691.848029473] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131691.848092065] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131691.848902817] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131692.025046081] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131692.025926049] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131692.026196705] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_planner_node-12] [INFO] [1753131692.026630209] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131692.048025569] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131692.048128289] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131692.048157601] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131692.048176577] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131692.048194817] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131692.048211425] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131692.048232961] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131692.048295489] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131692.049856801] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131692.201909057] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[xarm_planner_node-16] [INFO] [1753131692.204359681] [move_group_interface]: Planning request complete!
+[xarm_planner_node-12] [INFO] [1753131692.204470689] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131692.205109889] [move_group_interface]: time taken to generate plan: 0.0257729 seconds
+[xarm_planner_node-12] [INFO] [1753131692.205506785] [move_group_interface]: time taken to generate plan: 0.00772701 seconds
+[move_group-11] [INFO] [1753131692.206495841] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131692.206875009] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131692.206936161] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131692.206970369] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131692.207144577] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-12] [INFO] [1753131692.211417441] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131692.243631521] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-11] [INFO] [1753131692.243758753] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131692.243789665] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131692.244103041] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to lite6_traj_controller
+[ros2_control_node-14] [INFO] [1753131692.249387649] [lite6_traj_controller]: Received new action goal
+[ros2_control_node-14] [INFO] [1753131692.249697665] [lite6_traj_controller]: Accepted new action goal
+[move_group-11] [INFO] [1753131692.250076673] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: lite6_traj_controller started execution
+[move_group-11] [INFO] [1753131692.250122881] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-14] [INFO] [1753131693.757792385] [lite6_traj_controller]: Goal reached, success!
+[move_group-11] [INFO] [1753131693.850843265] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'lite6_traj_controller' successfully finished
+[move_group-11] [INFO] [1753131694.143247361] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-11] [INFO] [1753131694.143459169] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[move_group-11] [INFO] [1753131694.144593409] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[xarm_planner_node-16] [INFO] [1753131694.144908801] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131694.144960225] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131694.145014401] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131694.145044897] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131694.145208033] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-11] [ERROR] [1753131694.242929569] [moveit_ros.trajectory_execution_manager]: 
+[move_group-11] Invalid Trajectory: start point deviates from current robot state more than 0.01
+[move_group-11] joint 'joint2': expected: 0.363516, current: 0.349778
+[move_group-11] [INFO] [1753131694.243079649] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[xarm_planner_node-12] [INFO] [1753131694.244279009] [move_group_interface]: Execute request success!
+[xarm_planner_node-16] [INFO] [1753131694.244749857] [move_group_interface]: Execute request aborted
+[xarm_planner_node-16] [ERROR] [1753131694.246600257] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[xarm_planner_node-16] [ERROR] [1753131694.246690273] [xarm_planner_node]: executePath: execute failed, wait=1, MoveItErrorCode=-4
+[hunter_base_node-1] set steering angle: 0
+[xarm_moveit-17] [INFO] [1753131700.817353025] [xarm_moveit]: Waiting for 3 seconds to capture image...
+[image_saver_node-18] [INFO] [1753131700.817756705] [image_saver_node]: Flag received: Capturing image now.
+[image_saver_node-18] [INFO] [1753131700.841071937] [image_saver_node]: Processing image...
+[image_saver_node-18] [INFO] [1753131700.848349025] [image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/data_collection_images/data_collection_47/img_3.jpg
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[xarm_moveit-17] [INFO] [1753131703.821948129] [xarm_moveit]: Moving to next pose.....
+[hunter_base_node-1] set steering angle: 0
+[hunter_base_node-1] set steering angle: 0
+[xarm_planner_node-16] [INFO] [1753131704.324534337] [move_group_interface]: MoveGroup action client/server ready
+[xarm_planner_node-12] [INFO] [1753131704.324759009] [move_group_interface]: MoveGroup action client/server ready
+[xarm_moveit-17] [INFO] [1753131704.325073729] [xarm_moveit]: finished future.done while loop
+[move_group-11] [INFO] [1753131704.325344865] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131704.325860161] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_moveit-17] [INFO] [1753131704.325822529] [xarm_moveit]: finished creating pose plan with result None
+[xarm_moveit-17] [INFO] [1753131704.326728865] [xarm_moveit]: Finished pose.....
+[xarm_planner_node-16] [INFO] [1753131704.326394209] [move_group_interface]: Planning request accepted
+[xarm_moveit-17] [INFO] [1753131704.327422017] [xarm_moveit]: Waiting for 9 seconds to capture image...
+[move_group-11] [WARN] [1753131704.343191969] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.343289025] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.343315457] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.343465761] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.343493409] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.343510433] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.343526209] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131704.343579745] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131704.344476417] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131704.504871841] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131704.505833345] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131704.506167617] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_planner_node-12] [INFO] [1753131704.506087713] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131704.543005089] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.543101569] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.543136705] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.543160865] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.543180257] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.543197089] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131704.543318529] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131704.543379585] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131704.544225889] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131704.701705217] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[xarm_planner_node-16] [INFO] [1753131704.705214881] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131704.705983233] [move_group_interface]: time taken to generate plan: 0.0871009 seconds
+[xarm_planner_node-12] [INFO] [1753131704.705412161] [move_group_interface]: Planning request complete!
+[xarm_planner_node-12] [INFO] [1753131704.705494209] [move_group_interface]: time taken to generate plan: 0.0427345 seconds
+[xarm_planner_node-12] [INFO] [1753131704.707846209] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131704.707073857] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131704.707407265] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131704.707461313] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131704.707492385] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131704.707669985] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-11] [INFO] [1753131704.746164833] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-11] [INFO] [1753131704.748743905] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131704.748796225] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131704.749895041] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to lite6_traj_controller
+[ros2_control_node-14] [INFO] [1753131704.751815553] [lite6_traj_controller]: Received new action goal
+[ros2_control_node-14] [INFO] [1753131704.751951809] [lite6_traj_controller]: Accepted new action goal
+[move_group-11] [INFO] [1753131704.753684641] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: lite6_traj_controller started execution
+[move_group-11] [INFO] [1753131704.753740065] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-14] [INFO] [1753131706.717695297] [lite6_traj_controller]: Goal reached, success!
+[move_group-11] [INFO] [1753131706.752875201] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'lite6_traj_controller' successfully finished
+[move_group-11] [INFO] [1753131707.043817153] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-11] [INFO] [1753131707.044147873] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[move_group-11] [INFO] [1753131707.045179425] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131707.045543745] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131707.045590273] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131707.045618593] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131707.045766529] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-16] [INFO] [1753131707.046094465] [move_group_interface]: Execute request accepted
+[move_group-11] [ERROR] [1753131707.145288801] [moveit_ros.trajectory_execution_manager]: 
+[move_group-11] Invalid Trajectory: start point deviates from current robot state more than 0.01
+[move_group-11] joint 'joint2': expected: 0.349778, current: 0.0672572
+[move_group-11] [INFO] [1753131707.145430433] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[xarm_planner_node-12] [INFO] [1753131707.147174881] [move_group_interface]: Execute request success!
+[xarm_planner_node-16] [INFO] [1753131707.147326401] [move_group_interface]: Execute request aborted
+[xarm_planner_node-16] [ERROR] [1753131707.147446433] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[xarm_planner_node-16] [ERROR] [1753131707.147533633] [xarm_planner_node]: executePath: execute failed, wait=1, MoveItErrorCode=-4
+[xarm_moveit-17] [INFO] [1753131713.337472641] [xarm_moveit]: Waiting for 3 seconds to capture image...
+[image_saver_node-18] [INFO] [1753131713.337807937] [image_saver_node]: Flag received: Capturing image now.
+[image_saver_node-18] [INFO] [1753131713.373813089] [image_saver_node]: Processing image...
+[image_saver_node-18] [INFO] [1753131713.379904385] [image_saver_node]: Saving image at /home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/data_collection_images/data_collection_47/img_4.jpg
+[xarm_moveit-17] [INFO] [1753131716.341322753] [xarm_moveit]: Moving to next pose.....
+[xarm_planner_node-16] [INFO] [1753131716.843939233] [move_group_interface]: MoveGroup action client/server ready
+[xarm_planner_node-12] [INFO] [1753131716.844039297] [move_group_interface]: MoveGroup action client/server ready
+[xarm_moveit-17] [INFO] [1753131716.844159809] [xarm_moveit]: finished future.done while loop
+[xarm_moveit-17] [INFO] [1753131716.844893313] [xarm_moveit]: finished creating pose plan with result None
+[move_group-11] [INFO] [1753131716.845084961] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131716.845501569] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_moveit-17] [INFO] [1753131716.845810657] [xarm_moveit]: Finished pose.....
+[xarm_moveit-17] [INFO] [1753131716.846456577] [xarm_moveit]: Waiting for 9 seconds to capture image...
+[xarm_planner_node-16] [INFO] [1753131716.846811809] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131716.942934593] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131716.943148577] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131716.943179361] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131716.943201729] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131716.943242177] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131716.943262913] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131716.943278657] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131716.943342817] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131716.944284257] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131717.085975681] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[move_group-11] [INFO] [1753131717.088667361] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-11] [INFO] [1753131717.089067777] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[xarm_planner_node-12] [INFO] [1753131717.089137089] [move_group_interface]: Planning request accepted
+[move_group-11] [WARN] [1753131717.143902497] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'base_link' to planning frame'world' (Could not find a connection between 'world' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131717.144012065] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'odom' to planning frame'world' (Could not find a connection between 'world' and 'odom' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131717.144039073] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131717.144619169] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_link' to planning frame'world' (Could not find a connection between 'world' and 'camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131717.144677537] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_depth_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_depth_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131717.144856737] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [WARN] [1753131717.144880353] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Unable to transform object from frame 'camera_color_optical_frame' to planning frame'world' (Could not find a connection between 'world' and 'camera_color_optical_frame' because they are not part of the same tree.Tf has two or more unconnected trees.)
+[move_group-11] [INFO] [1753131717.144948481] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-11] [INFO] [1753131717.145801089] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'lite6' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-11] [INFO] [1753131717.337421345] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[xarm_planner_node-16] [INFO] [1753131717.339250433] [move_group_interface]: Planning request complete!
+[xarm_planner_node-12] [INFO] [1753131717.339929569] [move_group_interface]: Planning request complete!
+[xarm_planner_node-16] [INFO] [1753131717.340227617] [move_group_interface]: time taken to generate plan: 0.0378306 seconds
+[xarm_planner_node-12] [INFO] [1753131717.340718529] [move_group_interface]: time taken to generate plan: 0.0735453 seconds
+[move_group-11] [INFO] [1753131717.341181953] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131717.341581697] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131717.341642721] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131717.341675297] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131717.341836385] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-16] [INFO] [1753131717.341975585] [move_group_interface]: Execute request accepted
+[move_group-11] [INFO] [1753131717.342893473] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-11] [INFO] [1753131717.342970113] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131717.342997953] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131717.343289345] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to lite6_traj_controller
+[ros2_control_node-14] [INFO] [1753131717.343772289] [lite6_traj_controller]: Received new action goal
+[ros2_control_node-14] [INFO] [1753131717.343903777] [lite6_traj_controller]: Accepted new action goal
+[move_group-11] [INFO] [1753131717.344357281] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: lite6_traj_controller started execution
+[move_group-11] [INFO] [1753131717.344396513] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-14] [INFO] [1753131718.777673313] [lite6_traj_controller]: Goal reached, success!
+[move_group-11] [INFO] [1753131718.850585921] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'lite6_traj_controller' successfully finished
+[move_group-11] [INFO] [1753131719.143681697] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-11] [INFO] [1753131719.143893729] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[move_group-11] [INFO] [1753131719.144771777] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-11] [INFO] [1753131719.145114401] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-11] [INFO] [1753131719.145167745] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131719.145198049] [moveit.plugins.moveit_simple_controller_manager]: Returned 1 controllers in list
+[move_group-11] [INFO] [1753131719.145352769] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[xarm_planner_node-12] [INFO] [1753131719.145940481] [move_group_interface]: Execute request accepted
+[move_group-11] [ERROR] [1753131719.242918337] [moveit_ros.trajectory_execution_manager]: 
+[move_group-11] Invalid Trajectory: start point deviates from current robot state more than 0.01
+[move_group-11] joint 'joint2': expected: 0.0672572, current: 0.0474159
+[move_group-11] [INFO] [1753131719.243176065] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[xarm_planner_node-12] [INFO] [1753131719.244902209] [move_group_interface]: Execute request aborted
+[xarm_planner_node-16] [INFO] [1753131719.245514817] [move_group_interface]: Execute request success!
+[xarm_planner_node-12] [ERROR] [1753131719.245812801] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[xarm_planner_node-12] [ERROR] [1753131719.245887937] [xarm_planner_node]: executePath: execute failed, wait=1, MoveItErrorCode=-4
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[realsense2_camera_node-4] [INFO] [1753131725.155844769] [rclcpp]: signal_handler(signum=2)
+[hunter_base_node-1] [INFO] [1753131725.158854017] [rclcpp]: signal_handler(signum=2)
+[xarm_planner_node-16] [xarm_planner_node] Ctrl-C caught, exit process...
+[ERROR] [xarm_planner_node-12]: process has died [pid 19519, exit code 255, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_planner/lib/xarm_planner/xarm_planner_node --ros-args -r __node:=xarm_planner_node --params-file /tmp/launch_params_k6p1vnp5 --params-file /tmp/launch_params_gxfhe98q --params-file /tmp/launch_params_bpy0l2cd'].
+[ERROR] [xarm_planner_node-16]: process has died [pid 19561, exit code 255, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_planner/lib/xarm_planner/xarm_planner_node --ros-args -r __node:=xarm_planner_node --params-file /tmp/launch_params_iubbpkna --params-file /tmp/launch_params_evqorhv2 --params-file /tmp/launch_params_oulao4kr'].
+[robot_state_publisher-9] [INFO] [1753131725.152341537] [rclcpp]: signal_handler(signum=2)
+[ros2_control_node-14] [INFO] [1753131725.152359649] [rclcpp]: signal_handler(signum=2)
+[usb_cam_node_exe-3] [INFO] [1753131725.152369569] [rclcpp]: signal_handler(signum=2)
+[usb_cam_node_exe-3] [WARN] [1753131725.159520481] [kiyo_cam_node]: Shutting down
+[move_group-11] [INFO] [1753131725.152357921] [rclcpp]: signal_handler(signum=2)
+[usb_cam_node_exe-2] [INFO] [1753131725.152509569] [rclcpp]: signal_handler(signum=2)
+[usb_cam_node_exe-2] [WARN] [1753131725.159452769] [front_cam_node]: Shutting down
+[pan_tilt_pub-19] Traceback (most recent call last):
+[pan_tilt_pub-19]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/pi_comm_pkg/pan_tilt_pub", line 33, in <module>
+[pan_tilt_pub-19]     sys.exit(load_entry_point('pi-comm-pkg==0.1.0', 'console_scripts', 'pan_tilt_pub')())
+[pan_tilt_pub-19]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/pan_tilt_pub.py", line 85, in main
+[pan_tilt_pub-19]     rclpy.spin(pantiltpub)
+[pan_tilt_pub-19]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[pan_tilt_pub-19]     executor.spin_once()
+[pan_tilt_pub-19]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[pan_tilt_pub-19]     self._spin_once_impl(timeout_sec)
+[pan_tilt_pub-19]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[pan_tilt_pub-19]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[pan_tilt_pub-19]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[pan_tilt_pub-19]     return next(self._cb_iter)
+[pan_tilt_pub-19]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[pan_tilt_pub-19]     wait_set.wait(timeout_nsec)
+[pan_tilt_pub-19] KeyboardInterrupt
+[mpc_ackermann.py-7] Traceback (most recent call last):
+[mpc_ackermann.py-7]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/terra_mpc/lib/terra_mpc/mpc_ackermann.py", line 252, in <module>
+[mpc_ackermann.py-7]     main()
+[mpc_ackermann.py-7]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/terra_mpc/lib/terra_mpc/mpc_ackermann.py", line 247, in main
+[mpc_ackermann.py-7]     rclpy.spin(mpc_controller)
+[mpc_ackermann.py-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[mpc_ackermann.py-7]     executor.spin_once()
+[mpc_ackermann.py-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[mpc_ackermann.py-7]     self._spin_once_impl(timeout_sec)
+[mpc_ackermann.py-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[mpc_ackermann.py-7]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[mpc_ackermann.py-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[mpc_ackermann.py-7]     return next(self._cb_iter)
+[mpc_ackermann.py-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[mpc_ackermann.py-7]     wait_set.wait(timeout_nsec)
+[mpc_ackermann.py-7] KeyboardInterrupt
+[xarm_moveit-17] Traceback (most recent call last):
+[xarm_moveit-17]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/xarm_control/xarm_moveit", line 33, in <module>
+[xarm_moveit-17]     sys.exit(load_entry_point('xarm-control==0.0.0', 'console_scripts', 'xarm_moveit')())
+[xarm_moveit-17]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/run_xarm_moveit.py", line 225, in main
+[xarm_moveit-17]     rclpy.spin(xarm_moveit)
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[xarm_moveit-17]     executor.spin_once()
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[xarm_moveit-17]     self._spin_once_impl(timeout_sec)
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 734, in _spin_once_impl
+[xarm_moveit-17]     handler()
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[xarm_moveit-17]     self._handler.send(None)
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 437, in handler
+[xarm_moveit-17]     await call_coroutine(entity, arg)
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 391, in _execute_service
+[xarm_moveit-17]     response = await await_or_execute(srv.callback, request, srv.srv_type.Response())
+[xarm_moveit-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[xarm_moveit-17]     return callback(*args)
+[xarm_moveit-17]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/run_xarm_moveit.py", line 97, in arm_state_callback
+[xarm_moveit-17]     asyncio.run(self.initialPose())
+[xarm_moveit-17]   File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+[xarm_moveit-17]     return loop.run_until_complete(main)
+[xarm_moveit-17]   File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+[xarm_moveit-17]     self.run_forever()
+[xarm_moveit-17]   File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+[xarm_moveit-17]     self._run_once()
+[xarm_moveit-17]   File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+[image_saver_node-18] Traceback (most recent call last):
+[image_saver_node-18]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/xarm_control/image_saver_node", line 33, in <module>
+[image_saver_node-18]     sys.exit(load_entry_point('xarm-control==0.0.0', 'console_scripts', 'image_saver_node')())
+[image_saver_node-18]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/python3.10/site-packages/xarm_control/kiyo_image_save.py", line 91, in main
+[image_saver_node-18]     rclpy.spin(image_saver_node)
+[image_saver_node-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[image_saver_node-18]     executor.spin_once()
+[image_saver_node-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[image_saver_node-18]     self._spin_once_impl(timeout_sec)
+[image_saver_node-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[image_saver_node-18]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[image_saver_node-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[image_saver_node-18]     return next(self._cb_iter)
+[image_saver_node-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[image_saver_node-18]     wait_set.wait(timeout_nsec)
+[image_saver_node-18] KeyboardInterrupt
+[xarm_planner_node-12] [xarm_planner_node] Ctrl-C caught, exit process...
+[realsense_image_saver_node-20] hi1
+[realsense_image_saver_node-20] hi2
+[realsense_image_saver_node-20] Directory /home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_pan_tilt_images already exists.
+[realsense_image_saver_node-20] hi3
+[realsense_image_saver_node-20] Traceback (most recent call last):
+[realsense_image_saver_node-20]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/pi_comm_pkg/realsense_image_saver_node", line 33, in <module>
+[realsense_image_saver_node-20]     sys.exit(load_entry_point('pi-comm-pkg==0.1.0', 'console_scripts', 'realsense_image_saver_node')())
+[realsense_image_saver_node-20]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/python3.10/site-packages/pi_comm_pkg/realsense_image_save.py", line 95, in main
+[realsense_image_saver_node-20]     rclpy.spin(image_saver_node)
+[realsense_image_saver_node-20]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[realsense_image_saver_node-20]     executor.spin_once()
+[realsense_image_saver_node-20]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[state_machine.py-8] Traceback (most recent call last):
+[state_machine.py-8]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py", line 148, in <module>
+[state_machine.py-8]     main()
+[state_machine.py-8]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py", line 142, in main
+[state_machine.py-8]     state_machine_node = state_machine()
+[state_machine.py-8]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py", line 25, in __init__
+[state_machine.py-8]     self.state_pub()
+[state_machine.py-8]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py", line 35, in state_pub
+[state_machine.py-8]     self.data_collection_state()
+[state_machine.py-8]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py", line 59, in data_collection_state
+[state_machine.py-8]     self.send_robot_state_request()
+[state_machine.py-8]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py", line 111, in send_robot_state_request
+[state_machine.py-8]     rclpy.spin_until_future_complete(self, future_arm)
+[state_machine.py-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 248, in spin_until_future_complete
+[state_machine.py-8]     executor.spin_until_future_complete(future, timeout_sec)
+[state_machine.py-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 303, in spin_until_future_complete
+[state_machine.py-8]     self.spin_once_until_future_complete(future, timeout_sec)
+[state_machine.py-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 746, in spin_once_until_future_complete
+[state_machine.py-8]     self._spin_once_impl(timeout_sec)
+[state_machine.py-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[state_machine.py-8]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[state_machine.py-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[state_machine.py-8]     return next(self._cb_iter)
+[state_machine.py-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[state_machine.py-8]     wait_set.wait(timeout_nsec)
+[state_machine.py-8] KeyboardInterrupt
+[realsense_image_saver_node-20]     self._spin_once_impl(timeout_sec)
+[realsense_image_saver_node-20]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[realsense_image_saver_node-20]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[realsense_image_saver_node-20]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[realsense_image_saver_node-20]     return next(self._cb_iter)
+[realsense_image_saver_node-20]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[realsense_image_saver_node-20]     wait_set.wait(timeout_nsec)
+[realsense_image_saver_node-20] KeyboardInterrupt
+[hunter_base_node-1] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[hunter_base_node-1]   what():  failed to create guard condition: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[realsense2_camera_node-4] [INFO] [1753131725.252905505] [camera.camera]: Stop Sensor: Depth Module
+[realsense2_camera_node-4] [INFO] [1753131725.253003489] [camera.camera]: Close Sensor. 
+[static_transform_publisher-10] [INFO] [1753131725.169285185] [rclcpp]: signal_handler(signum=2)
+[xarm_moveit-17]     event_list = self._selector.select(timeout)
+[xarm_moveit-17]   File "/usr/lib/python3.10/selectors.py", line 469, in select
+[xarm_moveit-17]     fd_event_list = self._selector.poll(timeout, max_ev)
+[xarm_moveit-17] KeyboardInterrupt
+[xarm_planner_node-12] lite6, 
+[xarm_planner_node-16] lite6, 
+[move_group-11] [INFO] [1753131725.297752417] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[move_group-11] [INFO] [1753131725.302811457] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-11] [INFO] [1753131725.308240833] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-11] [INFO] [1753131725.311736417] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[ros2_control_node-14] [INFO] [1753131725.312338817] [ufactory_driver]: [TCP STATUS] CONTROL: 0, REPORT: 0
+[ros2_control_node-14] Report[normal] is disconnected, try reconnect
+[ros2_control_node-14] [INFO] [1753131725.312686305] [ufactory_driver]: [TCP STATUS] CONTROL: 0, REPORT: 0
+[ros2_control_node-14] [INFO] [1753131725.314473057] [ufactory_driver]: [TCP STATUS] CONTROL: 0, REPORT: 0
+[ros2_control_node-14] [INFO] [1753131725.314470401] [ufactory_driver]: [TCP STATUS] CONTROL: 0, REPORT: 1
+[ros2_control_node-14] Tcp Report Rich connection successful
+[ros2_control_node-14] xarm report thread is quit.
+[ros2_control_node-14] Tcp Report Norm connection successful
+[ros2_control_node-14] Report[normal] is connected
+[move_group-11] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-11]          at line 127 in ./src/class_loader.cpp
+[ERROR] [hunter_base_node-1]: process has died [pid 19474, exit code -6, cmd '/home/indro/colcon_ws/install/hunter_base/lib/hunter_base/hunter_base_node --ros-args --params-file /tmp/launch_params_qjtskyk2'].
+[keypoint_inference.py-5] [ERROR] [1753131725.488730465] [hunter.vision_perception]: Shutting down ROS2 Image neural network prediction module
+[keypoint_inference.py-5] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[realsense2_camera_node-4]  21/07 16:02:06,047 ERROR [281472726657248] (uvc-streamer.cpp:105) uvc streamer watchdog triggered on endpoint: 132
+[INFO] [static_transform_publisher-10]: process has finished cleanly [pid 19505]
+[INFO] [robot_state_publisher-9]: process has finished cleanly [pid 19503]
+[realsense2_camera_node-4] [INFO] [1753131726.278857377] [camera.camera]: Close Sensor - Done. 
+[realsense2_camera_node-4] [INFO] [1753131726.279025153] [camera.camera]: Stop Sensor: RGB Camera
+[realsense2_camera_node-4] [INFO] [1753131726.279065281] [camera.camera]: Close Sensor. 
+[reference_path_publisher.py-6] Traceback (most recent call last):
+[reference_path_publisher.py-6]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/waypoint_generator/lib/waypoint_generator/reference_path_publisher.py", line 66, in <module>
+[reference_path_publisher.py-6]     main()
+[reference_path_publisher.py-6]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/waypoint_generator/lib/waypoint_generator/reference_path_publisher.py", line 63, in main
+[reference_path_publisher.py-6]     rclpy.shutdown()
+[reference_path_publisher.py-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 126, in shutdown
+[reference_path_publisher.py-6]     _shutdown(context=context)
+[reference_path_publisher.py-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[reference_path_publisher.py-6]     return context.shutdown()
+[reference_path_publisher.py-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[reference_path_publisher.py-6]     self.__context.shutdown()
+[reference_path_publisher.py-6] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[INFO] [usb_cam_node_exe-2]: process has finished cleanly [pid 19476]
+[INFO] [joint_state_publisher-13]: process has finished cleanly [pid 19529]
+[ERROR] [image_saver_node-18]: process has died [pid 19599, exit code -2, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/xarm_control/image_saver_node --ros-args -r __node:=image_saver_node -r __ns:=/'].
+[ERROR] [state_machine.py-8]: process has died [pid 19492, exit code -2, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/state_machine_pkg/lib/state_machine_pkg/state_machine.py --ros-args -r __node:=state_Machine_node'].
+[ERROR] [reference_path_publisher.py-6]: process has died [pid 19484, exit code 1, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/waypoint_generator/lib/waypoint_generator/reference_path_publisher.py --ros-args -r __node:=waypoint_generator_node -r __ns:=/hunter'].
+[ERROR] [ros2_control_node-14]: process has died [pid 19541, exit code -11, cmd '/opt/ros/humble/lib/controller_manager/ros2_control_node --ros-args --params-file /tmp/launch_params_9_er16ju --params-file /home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_controller/share/xarm_controller/config/lite6_controllers.yaml --params-file /home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_api/share/xarm_api/config/xarm_params.yaml'].
+[keypoint_inference.py-5] Traceback (most recent call last):
+[keypoint_inference.py-5]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/vision_perception/lib/vision_perception/keypoint_inference.py", line 565, in <module>
+[keypoint_inference.py-5]     sys.exit(main() or 0)
+[keypoint_inference.py-5]   File "/home/indro/tuskegee_robot_ws_v6_final_jg/install/vision_perception/lib/vision_perception/keypoint_inference.py", line 561, in main
+[keypoint_inference.py-5]     rclpy.shutdown()
+[keypoint_inference.py-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 126, in shutdown
+[keypoint_inference.py-5]     _shutdown(context=context)
+[keypoint_inference.py-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[keypoint_inference.py-5]     return context.shutdown()
+[keypoint_inference.py-5]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[keypoint_inference.py-5]     self.__context.shutdown()
+[keypoint_inference.py-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[ERROR] [pan_tilt_pub-19]: process has died [pid 19601, exit code -2, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/pi_comm_pkg/pan_tilt_pub --ros-args -r __node:=pan_tilt_pub_node -r __ns:=/'].
+[ERROR] [realsense_image_saver_node-20]: process has died [pid 19611, exit code -2, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/pi_comm_pkg/lib/pi_comm_pkg/realsense_image_saver_node --ros-args -r __node:=realsense_image_saver_node -r __ns:=/'].
+[ERROR] [xarm_moveit-17]: process has died [pid 19587, exit code -2, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/xarm_control/lib/xarm_control/xarm_moveit --ros-args -r __node:=xarm_moveit -r __ns:=/'].
+[ERROR] [mpc_ackermann.py-7]: process has died [pid 19486, exit code -2, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/terra_mpc/lib/terra_mpc/mpc_ackermann.py --ros-args -r __node:=mpc_controller_node -r __ns:=/hunter'].
+[ERROR] [keypoint_inference.py-5]: process has died [pid 19482, exit code 1, cmd '/home/indro/tuskegee_robot_ws_v6_final_jg/install/vision_perception/lib/vision_perception/keypoint_inference.py --ros-args -r __node:=vision_perception -r __ns:=/hunter'].
+[INFO] [usb_cam_node_exe-3]: process has finished cleanly [pid 19478]
+[realsense2_camera_node-4] [INFO] [1753131727.456921313] [camera.camera]: Close Sensor - Done. 
+[ERROR] [move_group-11]: process has died [pid 19516, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_jpw7g8sh --params-file /tmp/launch_params_l_ewpjof'].
+[move_group-11] 
+[ERROR] [realsense2_camera_node-4]: process[realsense2_camera_node-4] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [realsense2_camera_node-4]: sending signal 'SIGTERM' to process[realsense2_camera_node-4]
+[realsense2_camera_node-4] [INFO] [1753131730.299776417] [rclcpp]: signal_handler(signum=15)
+[INFO] [realsense2_camera_node-4]: process has finished cleanly [pid 19480]
+indro@indro-commander:~/tuskegee_robot_ws_v6_final_jg$ 
+
+
