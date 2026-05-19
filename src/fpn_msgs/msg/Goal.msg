@@ -1,0 +1,6 @@
+float64 latitude
+float64 longitude
+float32 heading
+float32 linear_velocity
+string state_to_trigger
+string type

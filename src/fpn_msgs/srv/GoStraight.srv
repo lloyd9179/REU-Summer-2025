@@ -1,0 +1,5 @@
+float32 distance
+float32 linear_speed
+---
+bool success
+string msg

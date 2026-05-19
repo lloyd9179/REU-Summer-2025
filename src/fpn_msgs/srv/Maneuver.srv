@@ -1,0 +1,8 @@
+Goal wp_start
+Goal wp_stop
+float64 zero_lat
+float64 zero_lon
+float32 zero_x
+float32 zero_y
+---
+string msg

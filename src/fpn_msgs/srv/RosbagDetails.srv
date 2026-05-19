@@ -1,0 +1,5 @@
+string  bagpath
+string  move_to_path
+bool    start
+---
+string  response

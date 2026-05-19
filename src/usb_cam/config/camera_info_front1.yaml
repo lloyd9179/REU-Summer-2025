@@ -1,0 +1,20 @@
+image_width: 320
+image_height: 240
+camera_name: front_cam
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [236.3592, 0.000000, 146.9967, 0.000000, 236.6789, 119.0409, 0.000000, 0.000000, 1.000000]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.4077, 0.1866, 0, 0, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,1.000]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [236.3592, 0.000000, 146.9967,0.00000, 0.000000, 236.6789, 119.0409, 0.000000,0.0000, 0.000000, 1.000000,0.00000]

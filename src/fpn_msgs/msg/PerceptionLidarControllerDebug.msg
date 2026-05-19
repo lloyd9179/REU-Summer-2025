@@ -1,0 +1,21 @@
+std_msgs/Header  header
+std_msgs/Header  used_pl_header
+int8    automatic
+string  code_description
+float32 cross_track_error
+int8    drive_mode
+int64   n_executions_from_reset
+bool    is_pl_reliable
+int8    out_row_mode
+float32 pf_actual_heading_angle
+float32 pf_filtered_heading
+float32 pf_filtered_x
+float32 pf_target_heading_angle
+float32 pf_x_pos
+bool    reset
+int8    robot_controller_selection
+float32 wcf
+int64   t_prev_step_us
+
+geometry_msgs/Twist measured_twist
+geometry_msgs/Twist desired_twist

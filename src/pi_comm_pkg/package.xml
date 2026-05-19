@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>pi_comm_pkg</name>
+  <version>0.1.0</version>
+  <description>Communications node for the TS robot</description>
+  <maintainer email="walt@illinois.edu">Ben Walt</maintainer>
+  <license>MIT</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <depend>mobile_valens_interfaces</depend>
+  <depend>fpn_msgs</depend>
+  
+
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,29 @@
+<launch>
+    <!-- Declare arguments -->
+    <arg name="filepath" default="/home/companion/ros_relevant_bagfiles/ts"/>
+    <arg name="outputs" default="/terrasentia/cmd_vel"/>
+    <arg name="sensors" default="/camera/color/image_raw /camera/color/image_raw/compressed /terrasentia/front_cam_node/image_rect_color/compressed  /terrasentia/front_cam_node/camera_info /terrasentia/front_cam_node/image_color /terrasentia/front_cam_node/image_rect_color"/>
+    <arg name="vision" default="/terrasentia/vision/distance /terrasentia/vision/heading /terrasentia/vision/path /terrasentia/vision/ekf_output /terrasentia/vision/path_eval /terrasentia/vision/left_row_map /terrasentia/vision/right_row_map /terrasentia/vision/vpl_argmax_img/compressed /terrasentia/vision/vpl_img/compressed"/>
+    <arg name="mpc" default="/terrasentia/mpc_cmd_vel /terrasentia/mpc_node/mpc_pred_vals /terrasentia/mpc_node/output /terrasentia/mpc_node/pts_car"/>
+    <arg name="paths" default="/terrasentia/path"/>
+    <arg name="essential_sensors" default="/terrasentia/full_gps /terrasentia/motors /terrasentia/imu"/>
+    <arg name="ts" default="/terrasentia/datalog_switch /terrasentia/enable_auto_mode /terrasentia/motion_command /terrasentia/ping /eventstr /terrasentia/controller_debug"/>
+
+    <!-- Rosbag node for recording -->
+    <node
+        pkg="ros2bag"
+        exec="record"
+        name="rosbag_record_ts"
+        args="-o $(arg filepath)_$(anon time) $(arg outputs) $(arg sensors) $(arg vision) $(arg mpc) $(arg paths) $(arg essential_sensors) $(arg ts) /tf /rosout"
+        output="screen">
+    </node>
+
+    <!-- Node to dump rosparam -->
+    <node
+        pkg="vision_nav_manager"
+        exec="rosparam_dumper.py"
+        name="rosparam"
+        output="screen"
+        respawn="false">
+    </node>
+</launch>

@@ -1,0 +1,10 @@
+std_msgs/Header header
+float32 dl_lidar
+float32 dr_lidar
+float32 dl_vision
+float32 dr_vision
+float32 dl_hybrid
+float32 dr_hybrid
+float32 alpha
+float32 dl_alpha
+float32 dr_alpha

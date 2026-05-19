@@ -1,0 +1,5 @@
+float32 distance
+float32 distance_raw
+fpn_msgs/PerceptionLidarLine line
+float32 custom_metric
+float32 custom_ekf_r

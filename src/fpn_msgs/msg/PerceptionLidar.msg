@@ -1,0 +1,17 @@
+std_msgs/Header  header
+string  code_description
+int8    dead_count
+float32 estimated_lane_width
+float32 heading
+float32 heading_raw
+int16   points_occlusion
+int8    heuristics_cond
+bool    is_reliable
+int64   n_executions_from_reset
+int8    out_row_mode
+bool    reset
+int16   state
+int64   t_prev_step_us
+int64   t_runperception_us
+fpn_msgs/PerceptionLidarRow left_row
+fpn_msgs/PerceptionLidarRow right_row
