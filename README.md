@@ -4,7 +4,7 @@ Summer 2025 REU, Industrial and Systems Engineering
 
 Author: Junyang Guan
 
-Advisor: Professor Girish Krishnan
+Advisor: Professor Girish Krishnan (gkrishna@illinois.edu)
 
 Collaborated with PhD Student: James Nam (sn29@illinois.edu)
 
