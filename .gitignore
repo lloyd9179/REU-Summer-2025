@@ -1,3 +1,29 @@
 build/
 install/
 log/
+
+# Python
+*.pyc
+__pycache__/
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Virtualenvs
+.venv/
+env/
+
+# Swap and temp files
+*.swp
+*.tmp
+
+# ROS local setup
+local_setup.bash
+local_setup.sh
+
+# Coverage
+.coverage
